@@ -1,0 +1,136 @@
+#page-orphanage {
+   display: flex;
+   min-height: 100vh;
+}
+
+.orphanage-details {
+   width: 700px;
+   margin: 6.4rem auto;
+   background: white;
+   border: 1px solid #D3E2E5;
+
+   border-radius: 2rem;
+
+   overflow: hidden;
+}
+
+main {   
+   flex: 1;
+}
+
+.orphanage-details > img {
+   /* aqui o ">" seleciona apenas o primeiro "nivel" dentro dessa tag. nesse caso, é tudo fora da div de classe "images". se houvessem mais de uma tag <img> fora da div de classe "images", todas elas seriam selecionadas, mas há apenas uma. */
+
+   width: 100%;
+   height: 20rem;
+   object-fit: cover;
+}
+
+.images {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   column-gap: 1.6rem;
+   margin: 16px 40px 0;
+}
+
+.images button {
+   border: none;
+   background: none;
+
+   height: 5rem;
+   cursor: pointer;
+   border-radius: 1rem;
+
+   overflow: hidden;
+
+   opacity: .6;
+
+   transition: opacity .2s;
+}
+
+.images button:hover, .images button.active {
+   opacity: 1;
+}
+
+.images button img {
+   width: 100%;
+   height: 5rem;
+   object-fit: cover;
+}
+
+.orphanage-details-content {
+   padding: 3rem 4rem;
+}
+
+.orphanage-details-content h1 {
+   color: #4d6f80;
+   font-size: 3rem;
+   line-height: 1.5;
+   margin-bottom: 0.5rem;   
+}
+
+.orphanage-details-content p {
+   line-height: 1.5;
+   color: #5c8599;
+   margin-top: 2.4rem;
+}
+
+.orphanage-details-content hr {
+   width: 100%;
+   height: 6px;
+
+   border: 0;
+
+   color: #000000;
+   margin: 4.2rem 0;
+}
+
+.orphanage-details-content h2 {
+   font-size: 2rem;
+   line-height: 1.5;
+   color: #4d6f80;
+}
+
+.open-details {
+   margin-top: 2.4rem;
+   
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* duas colunas inseridas manualmente */
+   column-gap: 2rem;
+
+   line-height: 1.5;
+}
+
+.open-details div {
+   padding: 2rem 1.2rem;
+}
+
+.open-details div img {
+   display: block;
+   
+   margin-bottom: 1rem;
+}
+
+.open-details .hour {
+   background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
+   border: 1px solid #B3DAE2;
+   border-radius: 20px;
+   
+   color: #5C8599;
+}
+
+.open-details .open-on-weekends {
+   border-radius: 20px;
+}
+
+.open-on-weekends.open {
+   background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
+   border: 1px solid #A1E9C5;
+   color: #37C77F;
+}
+
+.open-on-weekends.closed {
+   background: linear-gradient(154.16deg, #FCF0F4 7.85%, #FFFFFF 91.03%);
+   border: 1px solid #FFBCD4;
+   color: #FF669D;
+}

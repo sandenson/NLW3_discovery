@@ -1,0 +1,20 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     color: white;
+     height: 100vh;
+     background: #ebf2f5;
+}
+
+body, input, button, textarea {
+     font-size: 16px;
+     line-height: 1;
+     font-weight: 400;
+     font-family: 'Nunito', sans-serif;
+
+     /* pode ser feita como "font: 400 18px/1 'Nunito', sans-serif;" */
+}

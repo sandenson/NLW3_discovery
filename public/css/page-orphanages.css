@@ -1,0 +1,135 @@
+#page-orphanages {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+}
+
+#mapid {
+   width: 100%;
+   height: 100%;
+
+   animation-delay: .2s;
+}
+
+aside {
+   width: clamp(24rem, 20vh, 44rem);
+
+   background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+   padding: clamp(3rem, 10vh, 4.2rem);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+aside h2 {
+   margin-top: 6vh;
+   font: 800 clamp(3vh, 6vh, 40px)/1.0 'Nunito', sans-serif;
+}
+
+aside p {
+   margin-top: 2vh;
+   font: 400 clamp(2vh, 3vw, 16px)/1 'Nunito', sans-serif;
+}
+
+aside footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+aside footer div p {
+   margin-top: .8rem;
+}
+
+aside footer div strong {
+   font-size: 2.4vh;
+}
+
+aside footer button {
+   width: 48px;
+   height: 48px;
+   border: none;
+   background: #12AFCB;
+   border-radius: 16px;
+   cursor: pointer;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transition: background .2s;
+}
+
+aside footer button:hover {
+   background: #17D6EB;
+}
+
+a.create-orphanage {
+   position: absolute;
+   bottom: 7vh;
+   right: 7vh;
+
+   z-index: 10;
+
+   width: 4rem;
+   height: 4rem;
+   background: #15C3D6;
+   border: none;
+   border-radius: 1.2rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+a.create-orphanage:hover {
+   background: #17D6EB;
+   cursor: pointer;
+
+   transition: background .2s;
+}
+
+.leaflet-popup-content-wrapper {
+   background: rgba(255, 255, 255, 0.8);
+   border-radius: 20px;
+}
+
+.leaflet-popup-content {
+   color: #0089A5;
+   font-size: 1.2rem;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 600;
+   margin: .8rem 1.2rem;
+
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+   width: 2.4rem;
+   height: 2.4rem;
+   background: #15C3D6;
+   box-shadow: 17.2828px 27.65px 41.48px rgba(23, 142, 166, 0.16);
+   border-radius: 12px;
+   
+   display:flex;
+   align-items: center;
+   justify-content: center;
+
+   transition: background .2s;
+}
+
+.leaflet-popup-content a:hover {
+   background: #17D6EB;
+   cursor: pointer;
+}
+
+.leaflet-popup-tip {
+   display: none;
+}
+
+.leaflet-container {
+   z-index: 5;
+}
